@@ -508,3 +508,86 @@ transform:scaleY(1);
 transform:scaleY(0.08);
 }
 }
+/* ===== CAT EARS ===== */
+.cat-ear{
+position:absolute;
+width:0;
+height:0;
+border-left:28px solid transparent;
+border-right:28px solid transparent;
+border-bottom:45px solid #EADBC8;
+top:-35px;
+z-index:4;
+}
+
+.left-ear{
+left:-55px;
+transform:rotate(-12deg);
+}
+
+.right-ear{
+right:-55px;
+transform:rotate(12deg);
+}
+
+/* inner ear detail */
+.cat-ear::after{
+content:'';
+position:absolute;
+left:-12px;
+top:12px;
+width:0;
+height:0;
+border-left:18px solid transparent;
+border-right:18px solid transparent;
+border-bottom:30px solid rgba(45,24,16,0.2);
+}
+
+/* ===== WHISKERS ===== */
+.whiskers{
+position:absolute;
+top:55px;
+width:110px;
+height:2px;
+background:rgba(234,219,200,0.35);
+z-index:4;
+}
+
+.left-whiskers{
+left:-120px;
+}
+
+.right-whiskers{
+right:-120px;
+}
+
+.left-whiskers::before,
+.left-whiskers::after,
+.right-whiskers::before,
+.right-whiskers::after{
+content:'';
+position:absolute;
+width:90px;
+height:2px;
+background:rgba(234,219,200,0.25);
+}
+
+.left-whiskers::before{
+top:-10px;
+transform:rotate(-10deg);
+}
+
+.left-whiskers::after{
+top:10px;
+transform:rotate(10deg);
+}
+
+.right-whiskers::before{
+top:-10px;
+transform:rotate(10deg);
+}
+
+.right-whiskers::after{
+top:10px;
+transform:rotate(-10deg);
+}
