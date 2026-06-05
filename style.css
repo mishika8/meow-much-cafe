@@ -407,13 +407,14 @@ transition:.3s;
 /* Floating Paw Background */
 .paw-bg{
 position:fixed;
-font-size:90px;
-color:rgba(234,219,200,0.012);
+font-size:95px;
+color:rgba(234,219,200,0.03);
 pointer-events:none;
 z-index:0;
 animation:floatPaw 14s ease-in-out infinite;
-filter: blur(7px);
-opacity:0.18;mix-blend-mode: soft-light;
+filter: blur(5px);
+opacity:0.28;
+mix-blend-mode: soft-light;
 }
 .paw1{
 top:10%;
