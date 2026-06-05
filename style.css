@@ -68,7 +68,7 @@ list-style:none;
     color:white;
 
     max-width:100%;   /* IMPORTANT FIX */
-    width:35%;       /* controls how far right block sits */
+    width:30%;       /* controls how far right block sits */
 }
 .hero-content h1{
 font-size:5rem;
