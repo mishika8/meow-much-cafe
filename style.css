@@ -190,9 +190,11 @@ transform:translateY(-10px);
     height: 260px;
     border-radius: 20px;
 
-    background-size: cover;
+    background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
+
+    background-color: #FAF7F2;
 
     margin-bottom: 20px;
 }
