@@ -413,7 +413,7 @@ pointer-events:none;
 z-index:0;
 animation:floatPaw 14s ease-in-out infinite;
 filter: blur(7px);
-opacity:0.18;
+opacity:0.18;mix-blend-mode: soft-light;
 }
 .paw1{
 top:10%;
