@@ -61,18 +61,15 @@ list-style:none;
 
 .hero-content{
     position:relative;
-    top:auto;
-    left:auto;
-    transform:none;
+    margin-left:auto;
+    margin-right:0;
 
-    max-width:700px;
-    z-index:5;
+    text-align:right;
     color:white;
 
-    margin-left:auto;   /* pushes it to right */
-    text-align:right;
+    max-width:100%;   /* IMPORTANT FIX */
+    width:35%;       /* controls how far right block sits */
 }
-
 .hero-content h1{
 font-size:5rem;
 line-height:1.1;
