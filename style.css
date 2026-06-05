@@ -236,12 +236,14 @@ transform:translateY(-8px);
     margin-top: 50px;
 }
 .gallery-box{
-    height: 250px;
+    width: 100%;
+    aspect-ratio: 1 / 1;
     border-radius: 20px;
+
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    border: 2px solid red;
+
     transition: 0.3s;
 }
 
