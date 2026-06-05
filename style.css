@@ -405,16 +405,15 @@ transform:translateY(-3px);
 transition:.3s;
 }
 /* Floating Paw Background */
-
 .paw-bg{
 position:fixed;
-font-size:100px;
-color:rgba(234,219,200,0.02);
+font-size:110px;
+color:rgba(234,219,200,0.015);
 pointer-events:none;
-z-index:1;
-animation:floatPaw 10s ease-in-out infinite;
-filter: blur(4px);
-opacity:0.35;
+z-index:0;
+animation:floatPaw 12s ease-in-out infinite;
+filter: blur(6px);
+opacity:0.2;
 }
 
 .paw1{
