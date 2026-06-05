@@ -230,12 +230,11 @@ transform:translateY(-8px);
 }
 
 .gallery-grid{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
-gap:20px;
-margin-top:50px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 15px;
+    margin-top: 50px;
 }
-
 .gallery-box{
 height:250px;
 background:#EADBC8;
