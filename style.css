@@ -409,10 +409,11 @@ transition:.3s;
 .paw-bg{
 position:fixed;
 font-size:120px;
-color:red;
+color:rgba(234,219,200,0.06);
 pointer-events:none;
-z-index:9999;
-animation:floatPaw 5s ease-in-out infinite;
+z-index:1;
+animation:floatPaw 8s ease-in-out infinite;
+filter: blur(1.5px);
 }
 
 .paw1{
@@ -467,38 +468,35 @@ transform:translateY(0px) scale(1);
 
 .cat-eyes{
 position:fixed;
-top:40%;
+top:45%;
 left:50%;
 transform:translate(-50%,-50%);
 display:flex;
 gap:100px;
 pointer-events:none;
-z-index:50;
-opacity:0.22;
+z-index:1;
+opacity:0.08;
+filter: blur(2px);
 }
 .eye{
-width:75px;
-height:75px;
-background:rgba(255,255,255,0.95);
+width:70px;
+height:70px;
+background:rgba(255,255,255,0.6);
 border-radius:50%;
 position:relative;
-box-shadow:
-0 0 12px rgba(255,255,255,0.25),
-0 0 30px rgba(255,255,255,0.12);
-animation:blink 5s infinite;
-}
-.eye::after{
+box-shadow:none;
+animation:blink 6s infinite;
+} .eye::after{
 content:'';
 position:absolute;
-width:14px;
-height:40px;
-background:#1a0f0a;
+width:12px;
+height:35px;
+background:rgba(0,0,0,0.6);
 left:50%;
 top:50%;
 transform:translate(-50%,-50%);
 border-radius:20px;
 }
-
 @keyframes blink{
 0%, 92%, 100%{
 transform:scaleY(1);
