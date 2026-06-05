@@ -19,7 +19,7 @@ overflow-x:hidden;
 
 .hero{
 height:100vh;
-position:relative;
+position:relative;z-index:1;
 overflow:hidden;
 background:#2D1810;
 }
