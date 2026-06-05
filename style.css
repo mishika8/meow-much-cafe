@@ -467,13 +467,13 @@ transform:translateY(0px) scale(1);
 
 .cat-eyes{
 position:fixed;
-top:18%;
-right:10%;
+top:150px;
+right:150px;
 display:flex;
-gap:80px;
+gap:60px;
 pointer-events:none;
-z-index:2;
-opacity:.25;
+z-index:99999;
+opacity:1;
 }
 
 .eye{
