@@ -239,11 +239,15 @@ transform:translateY(-8px);
     height: 250px;
     border-radius: 20px;
 
-    background-size: cover;
+    background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
 
-    display: block;
+    background-color: #FAF7F2;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .gallery-box:hover{
