@@ -15,13 +15,12 @@ color:#2D1810;
 overflow-x:hidden;
 }
 .hero{
-    background:#2D1810;
-    min-height:auto;
+    position:relative;
+    min-height:100vh;
     padding:120px 8% 80px;
     display:flex;
     align-items:center;
 }
-
 
 .video-label{
 font-size:1.4rem;
