@@ -452,13 +452,13 @@ animation-delay:5s;
 
 @keyframes floatPaw{
 0%{
-transform:translateY(0px) scale(0.98);
+transform:translateY(0px) scale(0.97);
 }
 50%{
-transform:translateY(-8px) scale(1);
+transform:translateY(-6px) scale(1);
 }
 100%{
-transform:translateY(0px) scale(0.98);
+transform:translateY(0px) scale(0.97);
 }
 }
 /* Cat Eyes Background */
