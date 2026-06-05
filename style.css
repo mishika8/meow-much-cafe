@@ -408,11 +408,11 @@ transition:.3s;
 
 .paw-bg{
 position:fixed;
-font-size:70px;
-color:rgba(234,219,200,0.15);
+font-size:120px;
+color:red;
 pointer-events:none;
-z-index:999;
-animation:floatPaw 8s ease-in-out infinite;
+z-index:9999;
+animation:floatPaw 5s ease-in-out infinite;
 }
 
 .paw1{
