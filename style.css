@@ -243,11 +243,7 @@ transform:translateY(-8px);
     background-position: center;
     background-repeat: no-repeat;
 
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-    font-weight: 700;
+    display: block;
 }
 
 .gallery-box:hover{
