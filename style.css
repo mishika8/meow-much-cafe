@@ -18,10 +18,11 @@ overflow-x:hidden;
 
 
 .hero{
-height:100vh;
-position:relative;z-index:1;
-overflow:hidden;
 background:#2D1810;
+min-height:100vh;
+display:flex;
+align-items:center;
+padding:120px 8%;
 }
 
 .hero-video-placeholder{
