@@ -236,15 +236,18 @@ transform:translateY(-8px);
     margin-top: 50px;
 }
 .gallery-box{
-    width: 100%;
-    aspect-ratio: 1 / 1;
+    height: 250px;
     border-radius: 20px;
 
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
 
-    transition: 0.3s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-weight: 700;
 }
 
 .gallery-box:hover{
