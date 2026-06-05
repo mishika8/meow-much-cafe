@@ -407,14 +407,20 @@ transition:.3s;
 /* Floating Paw Background */
 .paw-bg{
     position:fixed;
-    font-size:90px;
-    color:rgba(234,219,200,0.10); /* softer but still visible */
+    font-size:85px;
+
+    color:rgba(234,219,200,0.22);
+
     pointer-events:none;
-    z-index:2; /* above background but below content */
+    z-index:3; /* important: above background */
+
+    opacity:0.18; /* key visibility control */
+
+    filter: blur(0.8px);
+
     animation:floatPaw 12s ease-in-out infinite;
-    opacity:0.25; /* key balance */
-    filter: blur(1.5px);
-    mix-blend-mode: soft-light;
+
+    mix-blend-mode: normal; /* 🔥 REMOVE soft-light effect */
 }
 .paw1{
 top:10%;
