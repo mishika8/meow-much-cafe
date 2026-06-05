@@ -477,23 +477,23 @@ opacity:1;
 }
 
 .eye{
-width:90px;
-height:90px;
-background:white;
+width:120px;
+height:120px;
+background:#fff;
 border-radius:50%;
 position:relative;
 box-shadow:
-0 0 30px rgba(255,255,255,.5),
-0 0 60px rgba(255,255,255,.2);
-animation:blink 6s infinite;
+0 0 30px #fff,
+0 0 80px #fff;
+animation:blink 4s infinite;
 }
 
 .eye::after{
 content:'';
 position:absolute;
-width:18px;
-height:50px;
-background:#2D1810;
+width:20px;
+height:70px;
+background:black;
 left:50%;
 top:50%;
 transform:translate(-50%,-50%);
