@@ -15,9 +15,10 @@ color:#2D1810;
 overflow-x:hidden;
 }
 .hero{
-    position:relative;
+    background:#2D1810;
     min-height:100vh;
     padding:120px 8% 80px;
+    position:relative;
     display:flex;
     align-items:center;
 }
@@ -59,11 +60,10 @@ list-style:none;
 }
 
 .hero-content{
-    position:relative;
     margin-left:auto;
     text-align:right;
+    max-width:650px;
     color:white;
-    max-width:600px;
     z-index:5;
 }
 .hero-content h1{
