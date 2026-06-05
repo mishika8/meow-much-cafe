@@ -467,32 +467,32 @@ transform:translateY(0px) scale(1);
 
 .cat-eyes{
 position:fixed;
-top:50%;
-left:50%;
+top:45%;
+left:55%;
 transform:translate(-50%,-50%);
 display:flex;
-gap:80px;
+gap:90px;
 pointer-events:none;
-z-index:99999;
-opacity:0.25;
+z-index:10;
+opacity:0.12;
+filter: blur(1px);
 }
 .eye{
-width:90px;
-height:90px;
-background:#ffffff;
+width:60px;
+height:60px;
+background:rgba(255,255,255,0.9);
 border-radius:50%;
 position:relative;
 box-shadow:
-0 0 25px rgba(255,255,255,0.8),
-0 0 60px rgba(255,255,255,0.4);
-animation:blink 5s infinite;
+0 0 8px rgba(255,255,255,0.15);
+animation:blink 6s infinite;
 }
 .eye::after{
 content:'';
 position:absolute;
-width:18px;
-height:45px;
-background:#2D1810;
+width:10px;
+height:28px;
+background:rgba(45,24,16,0.9);
 left:50%;
 top:50%;
 transform:translate(-50%,-50%);
@@ -500,10 +500,10 @@ border-radius:20px;
 }
 
 @keyframes blink{
-0%, 92%, 100%{
+0%, 94%, 100%{
 transform:scaleY(1);
 }
-94%, 96%{
-transform:scaleY(0.05);
+96%{
+transform:scaleY(0.08);
 }
 }
