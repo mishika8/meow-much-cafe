@@ -477,23 +477,22 @@ z-index:99999;
 opacity:0.9;
 }
 .eye{
-width:120px;
-height:120px;
-background:#fff;
+width:90px;
+height:90px;
+background:#ffffff;
 border-radius:50%;
 position:relative;
 box-shadow:
-0 0 30px #fff,
-0 0 80px #fff;
-animation:blink 4s infinite;
+0 0 25px rgba(255,255,255,0.8),
+0 0 60px rgba(255,255,255,0.4);
+animation:blink 5s infinite;
 }
-
 .eye::after{
 content:'';
 position:absolute;
-width:20px;
-height:70px;
-background:black;
+width:18px;
+height:45px;
+background:#2D1810;
 left:50%;
 top:50%;
 transform:translate(-50%,-50%);
@@ -501,11 +500,10 @@ border-radius:20px;
 }
 
 @keyframes blink{
-0%,45%,50%,95%,100%{
+0%, 92%, 100%{
 transform:scaleY(1);
 }
-
-47%,48%{
+94%, 96%{
 transform:scaleY(0.05);
 }
 }
