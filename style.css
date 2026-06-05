@@ -236,13 +236,17 @@ transform:translateY(-8px);
     margin-top: 50px;
 }
 .gallery-box{
-height:250px;
-background:#EADBC8;
-border-radius:20px;
-display:flex;
-justify-content:center;
-align-items:center;
-font-weight:700;
+    height: 250px;
+    border-radius: 20px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border: 2px solid red;
+    transition: 0.3s;
+}
+
+.gallery-box:hover{
+    transform: scale(1.04);
 }
 
 .visit{
