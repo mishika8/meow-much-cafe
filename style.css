@@ -474,7 +474,7 @@ display:flex;
 gap:80px;
 pointer-events:none;
 z-index:99999;
-opacity:0.9;
+opacity:0.25;
 }
 .eye{
 width:90px;
