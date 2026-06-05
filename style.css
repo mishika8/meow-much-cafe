@@ -15,35 +15,7 @@ color:#2D1810;
 overflow-x:hidden;
 }
 
-.paw{
-position:fixed;
-font-size:28px;
-opacity:.08;
-pointer-events:none;
-animation:float 8s infinite ease-in-out;
-z-index:1;
-}
 
-.paw1{
-top:20%;
-left:4%;
-}
-
-.paw2{
-top:45%;
-right:5%;
-}
-
-.paw3{
-bottom:20%;
-left:10%;
-}
-
-@keyframes float{
-0%{transform:translateY(0);}
-50%{transform:translateY(-20px);}
-100%{transform:translateY(0);}
-}
 
 .hero{
 height:100vh;
