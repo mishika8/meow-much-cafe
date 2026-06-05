@@ -1,36 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <title>Meow Munch Cafe</title>
 
-<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
 
 <link rel="stylesheet" href="style.css">
-
 </head>
+
 <body>
+
+<div class="paw paw1">🐾</div>
+<div class="paw paw2">🐾</div>
+<div class="paw paw3">🐾</div>
 
 <header class="hero">
 
-<video autoplay muted loop playsinline class="hero-video">
-<source src="cat-video.mp4" type="video/mp4">
-</video>
+<div class="hero-video-placeholder">
 
-<div class="overlay"></div>
+<div class="video-label">
+CAT VIDEO / HERO IMAGE
+</div>
+
+</div>
+
+<div class="hero-overlay"></div>
 
 <nav>
 
 <div class="logo">
-🐾 Meow Munch Cafe
+LOGO HERE
 </div>
 
 <ul>
 <li>Home</li>
 <li>Cats</li>
-<li>Menu</li>
+<li>Food</li>
 <li>Gallery</li>
 <li>Visit</li>
 </ul>
@@ -44,17 +56,17 @@ Where Great Food Meets Happy Paws
 </h1>
 
 <p>
-Enjoy delicious food, playful cats and a cozy atmosphere
-that turns every visit into a memorable experience.
+A premium cat cafe experience filled with delicious food,
+warm moments and furry companions.
 </p>
 
-<div class="buttons">
+<div class="hero-buttons">
 
-<button class="primary">
+<button class="btn-primary">
 Meet Our Cats
 </button>
 
-<button class="secondary">
+<button class="btn-secondary">
 Explore Menu
 </button>
 
@@ -62,16 +74,19 @@ Explore Menu
 
 </div>
 
+<div class="curve"></div>
+
 </header>
 
 <section class="about">
 
-<h2>More Than Just A Cafe</h2>
+<h2>More Than A Cafe</h2>
 
 <p>
-Meow Munch Cafe is a place where food lovers and cat lovers
-come together. Enjoy delicious meals, cozy vibes and
-spend quality time with adorable feline friends.
+Meow Munch Cafe is designed as a cozy escape where people can
+enjoy delicious food while spending time with friendly cats.
+Whether you're visiting for lunch, dessert or simply some feline
+therapy, every visit becomes a memorable experience.
 </p>
 
 </section>
@@ -83,66 +98,74 @@ spend quality time with adorable feline friends.
 <div class="cat-grid">
 
 <div class="cat-card">
-<img src="cat1.jpg" alt="">
+<div class="cat-image">CAT PHOTO</div>
 <h3>Cat Name</h3>
-<p>Add cat description here.</p>
+<p>Add personality and description later.</p>
 </div>
 
 <div class="cat-card">
-<img src="cat2.jpg" alt="">
+<div class="cat-image">CAT PHOTO</div>
 <h3>Cat Name</h3>
-<p>Add cat description here.</p>
+<p>Add personality and description later.</p>
 </div>
 
 <div class="cat-card">
-<img src="cat3.jpg" alt="">
+<div class="cat-image">CAT PHOTO</div>
 <h3>Cat Name</h3>
-<p>Add cat description here.</p>
+<p>Add personality and description later.</p>
 </div>
 
 <div class="cat-card">
-<img src="cat4.jpg" alt="">
+<div class="cat-image">CAT PHOTO</div>
 <h3>Cat Name</h3>
-<p>Add cat description here.</p>
+<p>Add personality and description later.</p>
 </div>
 
 <div class="cat-card">
-<img src="cat5.jpg" alt="">
+<div class="cat-image">CAT PHOTO</div>
 <h3>Cat Name</h3>
-<p>Add cat description here.</p>
+<p>Add personality and description later.</p>
 </div>
 
 <div class="cat-card">
-<img src="cat6.jpg" alt="">
+<div class="cat-image">CAT PHOTO</div>
 <h3>Cat Name</h3>
-<p>Add cat description here.</p>
+<p>Add personality and description later.</p>
 </div>
 
 </div>
 
 </section>
 
-<section class="menu-preview">
+<section class="food">
 
 <h2>Signature Favorites</h2>
 
-<div class="menu-grid">
+<div class="food-grid">
 
-<div class="menu-item">
-<h3>Burgers</h3>
+<div class="food-card">BURGERS</div>
+<div class="food-card">PASTA</div>
+<div class="food-card">DESSERTS</div>
+<div class="food-card">SHAKES</div>
+<div class="food-card">COFFEE</div>
+<div class="food-card">SPECIALS</div>
+
 </div>
 
-<div class="menu-item">
-<h3>Pasta</h3>
-</div>
+</section>
 
-<div class="menu-item">
-<h3>Desserts</h3>
-</div>
+<section class="gallery">
 
-<div class="menu-item">
-<h3>Shakes</h3>
-</div>
+<h2>Gallery</h2>
+
+<div class="gallery-grid">
+
+<div class="gallery-box">PHOTO</div>
+<div class="gallery-box">PHOTO</div>
+<div class="gallery-box">PHOTO</div>
+<div class="gallery-box">PHOTO</div>
+<div class="gallery-box">PHOTO</div>
+<div class="gallery-box">PHOTO</div>
 
 </div>
 
@@ -153,14 +176,24 @@ spend quality time with adorable feline friends.
 <h2>Your Favorite Table Is Waiting</h2>
 
 <p>
-Visit us and create memories with great food and furry friends.
+Reserve your visit and enjoy a unique dining experience with our furry friends.
 </p>
 
-<button class="primary">
+<button class="btn-primary">
 Plan Your Visit
 </button>
 
 </section>
+
+<footer>
+
+<h3>Meow Munch Cafe</h3>
+
+<p>
+Food • Cats • Memories
+</p>
+
+</footer>
 
 </body>
 </html>
