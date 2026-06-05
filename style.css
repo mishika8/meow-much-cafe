@@ -467,32 +467,32 @@ transform:translateY(0px) scale(1);
 
 .cat-eyes{
 position:fixed;
-top:45%;
-left:55%;
+top:40%;
+left:50%;
 transform:translate(-50%,-50%);
 display:flex;
-gap:90px;
+gap:100px;
 pointer-events:none;
-z-index:10;
-opacity:0.12;
-filter: blur(1px);
+z-index:50;
+opacity:0.22;
 }
 .eye{
-width:60px;
-height:60px;
-background:rgba(255,255,255,0.9);
+width:75px;
+height:75px;
+background:rgba(255,255,255,0.95);
 border-radius:50%;
 position:relative;
 box-shadow:
-0 0 8px rgba(255,255,255,0.15);
-animation:blink 6s infinite;
+0 0 12px rgba(255,255,255,0.25),
+0 0 30px rgba(255,255,255,0.12);
+animation:blink 5s infinite;
 }
 .eye::after{
 content:'';
 position:absolute;
-width:10px;
-height:28px;
-background:rgba(45,24,16,0.9);
+width:14px;
+height:40px;
+background:#1a0f0a;
 left:50%;
 top:50%;
 transform:translate(-50%,-50%);
@@ -500,10 +500,10 @@ border-radius:20px;
 }
 
 @keyframes blink{
-0%, 94%, 100%{
+0%, 92%, 100%{
 transform:scaleY(1);
 }
-96%{
+94%{
 transform:scaleY(0.08);
 }
 }
