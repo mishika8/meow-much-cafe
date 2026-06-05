@@ -409,14 +409,14 @@ transition:.3s;
     position:fixed;
     font-size:85px;
 
-    color:rgba(234,219,200,0.22);
+    color:rgba(234,219,200,0.18);
 
     pointer-events:none;
     z-index:3; /* important: above background */
 
-    opacity:0.18; /* key visibility control */
+    opacity:0.12; /* key visibility control */
 
-    filter: blur(0.8px);
+    filter: blur(1px);
 
     animation:floatPaw 12s ease-in-out infinite;
 
