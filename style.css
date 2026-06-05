@@ -14,9 +14,6 @@ background:#FAF7F2;
 color:#2D1810;
 overflow-x:hidden;
 }
-
-
-
 .hero{
 background:#2D1810;
 min-height:100vh;
@@ -25,19 +22,7 @@ align-items:center;
 padding:120px 8%;
 }
 
-.hero-video-placeholder{
-position:absolute;
-inset:0;
-background:
-linear-gradient(
-135deg,
-#2D1810,
-#4A2C2A
-);
-display:flex;
-justify-content:center;
-align-items:center;
-}
+
 
 .video-label{
 font-size:1.4rem;
