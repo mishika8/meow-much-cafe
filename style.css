@@ -60,15 +60,17 @@ list-style:none;
 }
 
 .hero-content{
-    position:absolute;
-    top:50%;
-    right:0;
-    transform:translateY(-50%);
+    position:relative;
+    top:auto;
+    left:auto;
+    transform:none;
+
     max-width:700px;
     z-index:5;
     color:white;
+
+    margin-left:auto;   /* pushes it to right */
     text-align:right;
-    padding-right:8%;
 }
 
 .hero-content h1{
