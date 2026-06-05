@@ -286,13 +286,6 @@ list-style:none;
 color:white;
 }
 
-.hero{
-background:#2D1810;
-min-height:100vh;
-display:flex;
-align-items:center;
-padding:120px 8%;
-}
 
 .hero-grid{
 display:grid;
