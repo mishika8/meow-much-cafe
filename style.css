@@ -295,3 +295,140 @@ footer h3{
 font-family:'Playfair Display',serif;
 margin-bottom:10px;
 }
+.glass-nav{
+position:fixed;
+top:20px;
+left:50%;
+transform:translateX(-50%);
+width:90%;
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:18px 32px;
+background:rgba(255,255,255,.08);
+backdrop-filter:blur(20px);
+border:1px solid rgba(255,255,255,.1);
+border-radius:100px;
+z-index:1000;
+}
+
+.glass-nav ul{
+display:flex;
+gap:30px;
+list-style:none;
+color:white;
+}
+
+.hero{
+background:#2D1810;
+min-height:100vh;
+display:flex;
+align-items:center;
+padding:120px 8%;
+}
+
+.hero-grid{
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:60px;
+align-items:center;
+width:100%;
+}
+
+.mini-title{
+color:#d7c0a5;
+letter-spacing:4px;
+margin-bottom:20px;
+font-size:.9rem;
+}
+
+.hero-left h1{
+font-size:6rem;
+line-height:.95;
+color:white;
+font-family:'Playfair Display',serif;
+margin-bottom:30px;
+}
+
+.hero-text{
+color:#e5e5e5;
+font-size:1.15rem;
+max-width:550px;
+line-height:1.9;
+margin-bottom:35px;
+}
+
+.hero-buttons{
+display:flex;
+gap:16px;
+}
+
+.hero-image-placeholder{
+height:700px;
+border-radius:40px;
+background:
+linear-gradient(
+145deg,
+#4A2C2A,
+#1F120D
+);
+display:flex;
+justify-content:center;
+align-items:center;
+color:#ffffff55;
+font-size:1.2rem;
+letter-spacing:3px;
+border:1px solid rgba(255,255,255,.08);
+box-shadow:
+0 30px 80px rgba(0,0,0,.4);
+}
+
+.btn-primary{
+background:white;
+color:#2D1810;
+border:none;
+padding:16px 32px;
+border-radius:100px;
+font-weight:700;
+cursor:pointer;
+}
+
+.btn-secondary{
+background:transparent;
+border:1px solid rgba(255,255,255,.3);
+color:white;
+padding:16px 32px;
+border-radius:100px;
+cursor:pointer;
+}
+
+.scroll-indicator{
+position:absolute;
+bottom:30px;
+left:50%;
+transform:translateX(-50%);
+color:white;
+letter-spacing:4px;
+font-size:.8rem;
+animation:bounce 2s infinite;
+}
+
+@keyframes bounce{
+0%,100%{
+transform:translateX(-50%) translateY(0);
+}
+50%{
+transform:translateX(-50%) translateY(-10px);
+}
+}
+
+.hero-image-placeholder:hover{
+transform:translateY(-10px);
+transition:.4s;
+}
+
+.btn-primary:hover,
+.btn-secondary:hover{
+transform:translateY(-3px);
+transition:.3s;
+}
