@@ -498,7 +498,7 @@ display:flex;
 gap:100px;
 pointer-events:none;
 z-index:1;
-opacity:0.08;
+opacity:0.16;
 filter: blur(2px);
 }
 .eye{
