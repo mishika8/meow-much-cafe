@@ -654,14 +654,11 @@ section{
     }
 
     /* 👇 ADD IT HERE */
-    .input-row {
-        flex-direction: column;
-        gap: 12px;
-    }
-
-    .input-row input {
-        width: 100%;
-    }
+ .input-row {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    width: 100%;
 }
     .glass-nav ul {
         flex-wrap: wrap;
