@@ -511,22 +511,22 @@ box-shadow:none;
 animation:blink 6s infinite;
 } .eye::after{
 content:'';
+
 position:absolute;
+
 width:12px;
 height:35px;
-background:rgba(0,0,0,0.6);
+
+background:rgba(0,0,0,.6);
+
 left:50%;
 top:50%;
+
 transform:translate(-50%,-50%);
+
 border-radius:20px;
-}
-@keyframes blink{
-0%, 92%, 100%{
-transform:scaleY(1);
-}
-94%{
-transform:scaleY(0.08);
-}
+
+transition:.15s ease;
 }
 .glass-nav a[href*="instagram"]{
 padding:6px 14px;
