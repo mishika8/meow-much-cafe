@@ -749,3 +749,40 @@ section{
 
     pointer-events:none;
 }
+/* LUXURY CARD REFLECTION */
+
+.cat-card{
+    position:relative;
+    overflow:hidden;
+}
+
+.cat-card::before{
+    content:'';
+
+    position:absolute;
+
+    top:-100%;
+    left:-100%;
+
+    width:200%;
+    height:200%;
+
+    background:
+    linear-gradient(
+        135deg,
+        transparent 35%,
+        rgba(255,255,255,.25) 50%,
+        transparent 65%
+    );
+
+    transform:rotate(20deg);
+
+    transition:.8s;
+
+    pointer-events:none;
+}
+
+.cat-card:hover::before{
+    top:100%;
+    left:100%;
+}
