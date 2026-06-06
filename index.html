@@ -260,5 +260,30 @@ document.addEventListener('mousemove',(e)=>{
     <div class="orb orb1"></div>
 <div class="orb orb2"></div>
 <div class="orb orb3"></div>
+    <script>
+let lastScroll=0;
+
+const nav=document.querySelector('.glass-nav');
+
+window.addEventListener('scroll',()=>{
+
+let current=window.pageYOffset;
+
+if(current>lastScroll && current>150){
+
+nav.style.transform=
+'translateX(-50%) translateY(-150%)';
+
+}else{
+
+nav.style.transform=
+'translateX(-50%) translateY(0)';
+
+}
+
+lastScroll=current;
+
+});
+</script>
 </body>
 </html>
