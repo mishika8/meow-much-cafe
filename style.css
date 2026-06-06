@@ -799,3 +799,22 @@ section{
         grid-template-columns: 1fr;
     }
 }
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.hero-image img {
+    max-width: 100%;
+    display: block;
+}
+
+.glass-nav {
+    width: 92%;
+    box-sizing: border-box;
+}
+
+.hero-grid {
+    max-width: 100%;
+    overflow-x: hidden;
+}
