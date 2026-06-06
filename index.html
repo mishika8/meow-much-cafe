@@ -296,5 +296,34 @@ lastScroll=current;
 
 });
 </script>
+    <script>
+
+const eyes = document.querySelectorAll('.eye');
+
+document.addEventListener('mousemove',(e)=>{
+
+eyes.forEach(eye=>{
+
+const pupil = eye;
+
+const rect = eye.getBoundingClientRect();
+
+const centerX = rect.left + rect.width/2;
+const centerY = rect.top + rect.height/2;
+
+const deltaX = e.clientX - centerX;
+const deltaY = e.clientY - centerY;
+
+const moveX = deltaX * 0.04;
+const moveY = deltaY * 0.04;
+
+eye.style.transform =
+`translate(${moveX}px,${moveY}px)`;
+
+});
+
+});
+
+</script>
 </body>
 </html>
