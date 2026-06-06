@@ -241,12 +241,10 @@ transition:.3s;
 .food-card:hover{
 transform:translateY(-8px);
 }
-
 .gallery-grid{
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 15px;
-    margin-top: 50px;
+column-count:4;
+column-gap:15px;
+margin-top:50px;
 }
 .gallery-box{
     height: 250px;
