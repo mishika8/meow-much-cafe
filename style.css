@@ -501,7 +501,8 @@ z-index:1;
 opacity:0.2;
 filter: blur(2px);
 }
-.eye{
+.eye{ box-shadow:
+0 0 20px rgba(255,255,255,.15);
 width:70px;
 height:70px;
 background:rgba(255,255,255,0.6);
@@ -517,7 +518,7 @@ position:absolute;
 width:12px;
 height:35px;
 
-background:rgba(0,0,0,.6);
+background:rgba(0,0,0,.85);
 
 left:50%;
 top:50%;
