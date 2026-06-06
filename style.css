@@ -955,3 +955,17 @@ transition:
 transform .4s ease,
 background .4s ease;
 }
+/* SCROLL REVEALS */
+
+.reveal{
+opacity:0;
+transform:translateY(60px);
+transition:
+opacity 0.9s ease,
+transform 0.9s ease;
+}
+
+.reveal.active{
+opacity:1;
+transform:translateY(0);
+}
