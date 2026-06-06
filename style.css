@@ -272,7 +272,7 @@ box-shadow:
 }
 .gallery-box{ margin-bottom:15px;
 break-inside:avoid;
-    height: 250px;
+    height: 300px;
     border-radius: 20px;
 
     background-size: contain;
@@ -310,6 +310,11 @@ padding:50px 20px;
 footer h3{
 font-family:'Playfair Display',serif;
 margin-bottom:10px;
+}
+.footer-small{
+margin-top:15px;
+opacity:.6;
+font-size:.9rem;
 }
 .glass-nav{
 position:fixed;
