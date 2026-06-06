@@ -246,7 +246,8 @@ column-count:4;
 column-gap:15px;
 margin-top:50px;
 }
-.gallery-box{
+.gallery-box{ margin-bottom:15px;
+break-inside:avoid;
     height: 250px;
     border-radius: 20px;
 
