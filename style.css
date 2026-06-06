@@ -18,6 +18,15 @@ background: radial-gradient(circle at top, #FAF7F2, #f3ebe2);
 color:#2D1810;
 overflow-x:hidden;
 }
+img {
+    max-width: 100%;
+    display: block;
+}
+
+nav, .glass-nav {
+    max-width: 100%;
+    box-sizing: border-box;
+}
 .hero{
     background:#2D1810;
     min-height:100vh;
