@@ -658,15 +658,7 @@ section{
         padding: 12px 16px;
         gap: 10px;
     }
-@media (max-width: 768px) {
 
-    html, body {
-        overflow-x: hidden;
-    }
-
-    .glass-nav {
-        flex-direction: column;
-    }
 
     /* 👇 ADD IT HERE */
  .input-row {
