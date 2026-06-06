@@ -949,3 +949,8 @@ font-family:'Playfair Display',serif;
 .stat-box p{
 opacity:.7;
 }
+.glass-nav{
+transition:
+transform .4s ease,
+background .4s ease;
+}
