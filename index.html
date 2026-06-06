@@ -79,7 +79,7 @@ playful cats and unforgettable moments come together.
 <div class="hero-image">
   <img src="mainimage.png" alt="Hero Image">
 </div>
-</div>
+
 
 <div class="scroll-indicator">
 SCROLL
@@ -317,6 +317,22 @@ eye.style.transform =
 
 });
 
+</script>
+    <script>
+const reveals = document.querySelectorAll('.reveal');
+
+function revealOnScroll() {
+    reveals.forEach(section => {
+        const top = section.getBoundingClientRect().top;
+
+        if (top < window.innerHeight - 100) {
+            section.classList.add('active');
+        }
+    });
+}
+
+window.addEventListener('scroll', revealOnScroll);
+revealOnScroll();
 </script>
 </body>
 </html>
