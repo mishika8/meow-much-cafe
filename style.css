@@ -636,7 +636,14 @@ section{
     html, body {
         overflow-x: hidden;
     }
+.input-row {
+    flex-direction: column;
+    gap: 12px;
+}
 
+.input-row input {
+    width: 100%;
+}
     .glass-nav {
         flex-direction: column;
         width: 92%;
