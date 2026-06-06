@@ -916,3 +916,37 @@ transform:translateY(0);
 transform:translateY(-30px);
 }
 }
+.stats{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+gap:25px;
+padding:80px 8%;
+}
+
+.stat-box{
+background:white;
+padding:40px;
+border-radius:30px;
+text-align:center;
+
+box-shadow:
+0 15px 40px rgba(0,0,0,.06);
+
+transition:.4s;
+}
+
+.stat-box:hover{
+transform:
+translateY(-10px);
+}
+
+.stat-box h3{
+font-size:3rem;
+color:#4A2C2A;
+margin-bottom:10px;
+font-family:'Playfair Display',serif;
+}
+
+.stat-box p{
+opacity:.7;
+}
