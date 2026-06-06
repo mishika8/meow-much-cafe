@@ -226,5 +226,13 @@ Food • Cats • Memories
 <div class="paw-bg paw4">🐾</div>
 <div class="paw-bg paw5">🐾</div>
 <div class="paw-bg paw6">🐾</div>
+    <script>
+const spotlight=document.querySelector('.spotlight');
+
+document.addEventListener('mousemove',(e)=>{
+    spotlight.style.left=e.clientX+'px';
+    spotlight.style.top=e.clientY+'px';
+});
+</script>
 </body>
 </html>
