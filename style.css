@@ -745,12 +745,43 @@ section{
     width: 100%;
     max-width: 100%;
 }
-    .glass-nav ul {
-        flex-wrap: wrap;
-        justify-content: center;
-        gap: 10px;
-    }
+    .glass-nav {
+    position: fixed;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 10px;
+    padding: 10px;
+    background: rgba(255,255,255,0.08);
+    backdrop-filter: blur(20px);
+    border-radius: 999px;
+    z-index: 1000;
+}
 
+.glass-nav ul {
+    display: flex;
+    gap: 8px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.glass-nav ul li a {
+    display: inline-block;
+    padding: 10px 16px;
+    border-radius: 999px;
+    color: rgba(255,255,255,0.8);
+    text-decoration: none;
+    font-weight: 500;
+    transition: 0.3s ease;
+}
+
+.glass-nav ul li a:hover {
+    background: rgba(255,255,255,0.15);
+    color: white;
+    transform: translateY(-2px);
+}
     .hero {
         padding: 100px 5% 60px;
     }
