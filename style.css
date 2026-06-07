@@ -376,7 +376,11 @@ color:white;
     border-radius: 999px;
     transition: 0.3s ease;
 }
-
+.glass-nav ul li a.active {
+    background: white;
+    color: #2D1810;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+}
 .hero-grid{
 display:grid;
 grid-template-columns:1fr 1fr;
