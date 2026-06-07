@@ -125,10 +125,11 @@ nav ul {
 
 nav ul{
 display:flex;
-flex-wrap:wrap;
+flex-wrap:nowrap;
 gap:18px;
 list-style:none;
 justify-content:center;
+align-items:center;
 }
 
 .hero-content{
