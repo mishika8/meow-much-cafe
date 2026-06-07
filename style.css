@@ -725,7 +725,8 @@ section{
         flex-direction: column;
         width: 92%;
         padding: 12px 16px;
-        gap: 10px;  justify-content: center;
+       gap: 10px;
+justify-content: center;
     }
 
 
@@ -757,7 +758,7 @@ section{
     background: rgba(255,255,255,0.08);
     backdrop-filter: blur(20px);
     border-radius: 999px;
-    z-index: 1000;
+    z-index: 9999;
 }
 
 .glass-nav ul {
@@ -784,8 +785,8 @@ section{
     transform: translateY(-2px);
 }
     .hero {
-        padding: 100px 5% 60px;
-    }
+    padding: 220px 5% 60px;
+}
 
     .hero-grid {
         grid-template-columns: 1fr;
