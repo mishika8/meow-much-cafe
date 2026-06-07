@@ -1092,3 +1092,10 @@ background .4s ease;
     display:inline-block;
     margin-top:20px;
 }
+nav{
+    height:auto;
+}
+
+.hero{
+    padding-top:180px;
+}
