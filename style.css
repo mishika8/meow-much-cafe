@@ -679,7 +679,17 @@ display:block;
 .stars span:hover{
     transform:scale(1.3);
 }
+.stars span{
+    cursor:pointer;
+    font-size:1.8rem;
+    opacity:.35;
+    transition:.2s;
+}
 
+.stars span.active{
+    opacity:1;
+    transform:scale(1.15);
+}
 .feedback-form button{
     margin-top:10px;
     width:100%;
