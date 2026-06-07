@@ -345,21 +345,11 @@ margin-top:15px;
 opacity:.6;
 font-size:.9rem;
 }
-.glass-nav{
-position:fixed;
-top:20px;
-left:50%;
-transform:translateX(-50%);
-width:90%;
-display:flex;
-justify-content:space-between;
-align-items:center;
-padding:18px 32px;
-background:rgba(255,255,255,.08);
-backdrop-filter:blur(20px);
-border:1px solid rgba(255,255,255,.1);
-border-radius:100px;
-z-index:1000;
+.glass-nav {
+    flex-direction: column;
+    width: 92%;
+    padding: 12px 16px;
+    gap: 10px;
 }
 
 .glass-nav ul{
