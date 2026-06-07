@@ -568,11 +568,20 @@ border-radius:20px;
 
 transition:.15s ease;
 }
-.glass-nav a[href*="instagram"]{
-padding:6px 14px;
-border:1px solid rgba(255,255,255,0.3);
-border-radius:20px;
-transition:0.3s;
+.glass-nav {
+    position: fixed;
+    top: 20px;
+    left: 50%;
+    display: flex;
+    gap: 10px;
+    padding: 10px;
+    background: rgba(255,255,255,0.08);
+    backdrop-filter: blur(20px);
+    border-radius: 999px;
+    z-index: 9999;
+
+    /* keep transition for scroll animation */
+    transition: transform 0.4s ease, background 0.4s ease;
 }
 
 .glass-nav a[href*="instagram"]:hover{
