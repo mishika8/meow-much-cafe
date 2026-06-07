@@ -68,7 +68,7 @@ img {
     align-items:center;
     margin-bottom:40px;
 }
-}
+
 
 .video-label{
 font-size:1.4rem;
@@ -364,7 +364,7 @@ font-size:.9rem;
     justify-content: flex-end;
     align-items: center;
 }
-}
+
 .glass-nav ul li a {
     color: white;
     font-weight: 500;
@@ -1064,7 +1064,7 @@ background .4s ease;
 /* SCROLL REVEALS */
 
 .reveal{
-opacity:0;
+opacity:1;
 transform:translateY(60px);
 transition:
 opacity 0.9s ease,
