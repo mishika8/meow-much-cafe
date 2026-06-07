@@ -413,5 +413,44 @@ window.addEventListener("scroll", () => {
 });
 </script>
 </script>
+    <!-- Existing scripts -->
+<script>
+  // spotlight mousemove
+</script>
+
+<script>
+  // eye movement
+</script>
+
+<script>
+  // reveal sections
+</script>
+
+<script>
+  // star rating
+</script>
+
+<!-- NEW scroll-hide nav script -->
+<script>
+document.addEventListener('DOMContentLoaded', () => {
+    let lastScroll = 0;
+    const nav = document.querySelector('.glass-nav');
+
+    window.addEventListener('scroll', () => {
+        let current = window.pageYOffset;
+
+        if (current > lastScroll && current > 150) {
+            nav.style.transform = 'translateX(-50%) translateY(-150%)';
+        } else {
+            nav.style.transform = 'translateX(-50%) translateY(0)';
+        }
+
+        lastScroll = current;
+    });
+});
+</script>
+
+</body>
+</html>
 </body>
 </html>
