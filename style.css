@@ -729,15 +729,21 @@ section{
 
 
     /* 👇 ADD IT HERE */
- .input-row {
-    display: flex;
+.input-row {
     flex-direction: column;
     gap: 12px;
     width: 100%;
-} .input-row input {
+}
+
+.input-row input {
     width: 100%;
     min-width: 0;
-    box-sizing: border-box;
+}
+
+.feedback-form input,
+.feedback-form textarea {
+    width: 100%;
+    max-width: 100%;
 }
     .glass-nav ul {
         flex-wrap: wrap;
