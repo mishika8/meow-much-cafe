@@ -389,10 +389,10 @@ stars.forEach(star => {
 
 });
 <script>
-const sections = document.querySelectorAll("section, header");
-const navLinks = document.querySelectorAll(".glass-nav ul li a");
-
-window.addEventListener("scroll", () => {
+// Function to update active nav link
+function updateNavActive() {
+    const sections = document.querySelectorAll("section, header");
+    const navLinks = document.querySelectorAll(".glass-nav ul li a");
     let current = "";
 
     sections.forEach(section => {
@@ -403,13 +403,20 @@ window.addEventListener("scroll", () => {
             current = section.getAttribute("id");
         }
     });
-       navLinks.forEach(link => {
+
+    navLinks.forEach(link => {
         link.classList.remove("active");
         if (link.getAttribute("href") === "#" + current) {
             link.classList.add("active");
         }
     });
-});
+}
+
+// Run on scroll
+window.addEventListener("scroll", updateNavActive);
+
+// Run on page load
+window.addEventListener("load", updateNavActive);
 </script>
 </script>
     <!-- Existing scripts -->
