@@ -341,5 +341,31 @@ function revealOnScroll() {
 window.addEventListener('scroll', revealOnScroll);
 revealOnScroll();
 </script>
+    <script>
+
+const stars = document.querySelectorAll('.stars span');
+const ratingInput = document.getElementById('ratingValue');
+
+stars.forEach(star => {
+
+    star.addEventListener('click', () => {
+
+        const rating = star.dataset.rating;
+
+        ratingInput.value = rating;
+
+        stars.forEach(s => {
+            s.classList.remove('active');
+        });
+
+        for(let i=0;i<rating;i++){
+            stars[i].classList.add('active');
+        }
+
+    });
+
+});
+
+</script>
 </body>
 </html>
