@@ -59,14 +59,14 @@ img {
 
 
 
-.hero{
+.hero {
     background:#2D1810;
     min-height:100vh;
     padding:140px 8% 80px;
     position:relative;
     display:flex;
-    align-items:center;.hero {
-    margin-bottom: 40px;
+    align-items:center;
+    margin-bottom:40px;
 }
 }
 
@@ -1058,9 +1058,4 @@ transform:translateY(60px);
 transition:
 opacity 0.9s ease,
 transform 0.9s ease;
-}
-section, header {
-    display: block;
-    position: relative;
-    z-index: 1;
 }
