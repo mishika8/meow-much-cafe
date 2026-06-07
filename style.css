@@ -1083,4 +1083,12 @@ background .4s ease;
     display:inline-block;
     box-shadow:0 15px 35px rgba(0,0,0,.12);
 }
+.visit-location{
+    text-align:center;
+    padding:40px 20px;
+}
 
+.visit-location .btn-primary{
+    display:inline-block;
+    margin-top:20px;
+}
