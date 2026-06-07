@@ -65,7 +65,9 @@ img {
     padding:140px 8% 80px;
     position:relative;
     display:flex;
-    align-items:center;
+    align-items:center;.hero {
+    margin-bottom: 40px;
+}
 }
 
 .video-label{
