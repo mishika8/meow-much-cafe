@@ -392,34 +392,33 @@ window.addEventListener("load", () => {
 
 });
 </script>
-// Function to update active nav link
-function updateNavActive() {
-    const sections = document.querySelectorAll("section, header");
-    const navLinks = document.querySelectorAll(".glass-nav ul li a");
-    let current = "";
+  <script>
+window.addEventListener("load", () => {
 
-    sections.forEach(section => {
-        const top = section.offsetTop;
-        const height = section.offsetHeight;
+    console.log("JS loaded");
 
-        if (pageYOffset >= top - height / 3) {
-            current = section.getAttribute("id");
-        }
-    });
+    // STAR RATING
+    const stars = document.querySelectorAll('.stars span');
+    const ratingInput = document.getElementById('ratingValue');
 
-    navLinks.forEach(link => {
-        link.classList.remove("active");
-        if (link.getAttribute("href") === "#" + current) {
-            link.classList.add("active");
-        }
-    });
-}
+    if (stars.length && ratingInput) {
+        stars.forEach((star, index) => {
+            star.addEventListener('click', () => {
 
-// Run on scroll
-window.addEventListener("scroll", updateNavActive);
+                const rating = index + 1;
+                ratingInput.value = rating;
 
-// Run on page load
-window.addEventListener("load", updateNavActive);
+                stars.forEach((s, i) => {
+                    s.classList.toggle('active', i < rating);
+                });
+
+            });
+        });
+    } else {
+        console.log("Star elements missing");
+    }
+
+});
 </script>
 </script>
     <!-- Existing scripts -->
