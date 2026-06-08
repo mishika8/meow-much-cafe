@@ -365,26 +365,23 @@ window.addEventListener('scroll', revealOnScroll);
 revealOnScroll();
 </script>
     <script>
+window.addEventListener("DOMContentLoaded", () => {
 
-const stars = document.querySelectorAll('.stars span');
-const ratingInput = document.getElementById('ratingValue');
+    const stars = document.querySelectorAll('.stars span');
+    const ratingInput = document.getElementById('ratingValue');
 
-stars.forEach(star => {
+    stars.forEach(star => {
+        star.addEventListener('click', () => {
 
-    star.addEventListener('click', () => {
+            const rating = Number(star.dataset.rating);
+            ratingInput.value = rating;
 
-        const rating = star.dataset.rating;
+            stars.forEach(s => s.classList.remove('active'));
 
-        ratingInput.value = rating;
-
-        stars.forEach(s => {
-            s.classList.remove('active');
+            for (let i = 0; i < rating; i++) {
+                stars[i].classList.add('active');
+            }
         });
-
-        for(let i=0;i<rating;i++){
-            stars[i].classList.add('active');
-        }
-
     });
 
 });
