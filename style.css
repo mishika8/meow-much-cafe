@@ -1105,18 +1105,4 @@ nav{
 .hero{
     padding-top:180px;
 }
-.special-today-card {
-    text-align: center;
-    margin: 20px auto;
-}
 
-.special-image {
-    width: 100%;
-    max-width: 600px;
-    height: 400px; /* adjust as needed */
-    background-size: cover;
-    background-position: center;
-    border-radius: 20px;
-    box-shadow: 0 10px 30px rgba(0,0,0,0.2);
-    margin-bottom: 10px;
-}
