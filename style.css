@@ -5,8 +5,9 @@
 }
 
 html, body {
-    max-width: 100%;     
+    max-width: 100%;
     overflow-x: hidden;
+    position: relative;
 }
 a {
     text-decoration: none;
@@ -32,6 +33,7 @@ overflow-x:hidden;
 margin:0;
 padding:0;
 box-sizing:border-box;
+overscroll-behavior-x: none;
 }
 h2{
 font-family:'Playfair Display',serif;
