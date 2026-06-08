@@ -367,20 +367,30 @@ revealOnScroll();
     <script>
 window.addEventListener("DOMContentLoaded", () => {
 
+    window.addEventListener("load", () => {
+
     const stars = document.querySelectorAll('.stars span');
     const ratingInput = document.getElementById('ratingValue');
 
-    stars.forEach(star => {
+    if (!stars.length || !ratingInput) {
+        console.log("Stars or rating input not found");
+        return;
+    }
+
+    stars.forEach((star, index) => {
         star.addEventListener('click', () => {
 
-            const rating = Number(star.dataset.rating);
+            const rating = index + 1;
             ratingInput.value = rating;
 
-            stars.forEach(s => s.classList.remove('active'));
+            stars.forEach((s, i) => {
+                if (i < rating) {
+                    s.classList.add('active');
+                } else {
+                    s.classList.remove('active');
+                }
+            });
 
-            for (let i = 0; i < rating; i++) {
-                stars[i].classList.add('active');
-            }
         });
     });
 
