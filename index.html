@@ -364,38 +364,34 @@ function revealOnScroll() {
 window.addEventListener('scroll', revealOnScroll);
 revealOnScroll();
 </script>
-    <script>
-window.addEventListener("DOMContentLoaded", () => {
+   <script>
+window.addEventListener("load", () => {
 
-    window.addEventListener("load", () => {
+    console.log("JS loaded");
 
+    // STAR RATING
     const stars = document.querySelectorAll('.stars span');
     const ratingInput = document.getElementById('ratingValue');
 
-    if (!stars.length || !ratingInput) {
-        console.log("Stars or rating input not found");
-        return;
+    if (stars.length && ratingInput) {
+        stars.forEach((star, index) => {
+            star.addEventListener('click', () => {
+
+                const rating = index + 1;
+                ratingInput.value = rating;
+
+                stars.forEach((s, i) => {
+                    s.classList.toggle('active', i < rating);
+                });
+
+            });
+        });
+    } else {
+        console.log("Star elements missing");
     }
 
-    stars.forEach((star, index) => {
-        star.addEventListener('click', () => {
-
-            const rating = index + 1;
-            ratingInput.value = rating;
-
-            stars.forEach((s, i) => {
-                if (i < rating) {
-                    s.classList.add('active');
-                } else {
-                    s.classList.remove('active');
-                }
-            });
-
-        });
-    });
-
 });
-<script>
+</script>
 // Function to update active nav link
 function updateNavActive() {
     const sections = document.querySelectorAll("section, header");
