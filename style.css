@@ -1105,29 +1105,18 @@ nav{
 .hero{
     padding-top:180px;
 }
-.today-special {
+.special-today-card {
     text-align: center;
-    padding: 100px 8%;
-    background: #FAF7F2;
+    margin: 20px auto;
 }
 
-.today-special img {
+.special-image {
     width: 100%;
     max-width: 600px;
-    border-radius: 20px;
-    box-shadow: 0 20px 50px rgba(0,0,0,0.15);
-    transition: 0.4s ease;
-}
-
-.today-special img:hover {
-    transform: scale(1.03);
-}
-#specialImage {
-    width: 100%;
-    max-width: 600px;
-    height: auto;
+    height: 400px; /* adjust as needed */
+    background-size: cover;
+    background-position: center;
     border-radius: 20px;
     box-shadow: 0 10px 30px rgba(0,0,0,0.2);
-    display: block;
-    margin: 20px auto;
+    margin-bottom: 10px;
 }
