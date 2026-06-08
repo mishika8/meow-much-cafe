@@ -364,6 +364,7 @@ grid-template-columns:1fr 1fr;
 gap:60px;
 align-items:center;
 width:100%;
+    min-height: 550px;
 }
 
 .mini-title{
