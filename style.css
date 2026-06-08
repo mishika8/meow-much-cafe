@@ -339,6 +339,7 @@ font-size:.9rem;
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
+    transform: translateX(-50%) translateY(0);
 }
 .glass-nav ul {
     display: flex;
